@@ -6,3 +6,5 @@ scikit-learn
 sklearn
 joblib
 xgboost
+pip
+cmake
