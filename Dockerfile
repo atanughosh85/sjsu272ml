@@ -1,15 +1,15 @@
 FROM python:3.5.2-slim
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /app
+WORKDIR /app
 
-COPY requirements.txt /usr/src/app
+COPY requirements.txt .
 COPY encoded.csv /usr/src/app
 COPY trained_model.pkl /usr/src/app
 
 RUN pip install -r requirements.txt
 
-COPY . /usr/src/app
+COPY /app .
 
 EXPOSE 5000
 
