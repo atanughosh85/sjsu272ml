@@ -4,8 +4,8 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY requirements.txt .
-COPY encoded.csv /usr/src/app
-COPY trained_model.pkl /usr/src/app
+COPY encoded.csv .
+COPY trained_model.pkl .
 
 RUN pip install -r requirements.txt
 
